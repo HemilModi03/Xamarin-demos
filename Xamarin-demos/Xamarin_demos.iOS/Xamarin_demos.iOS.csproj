@@ -115,6 +115,9 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\Fonts\DroidSans-Regular.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-Medium.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -136,9 +139,39 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin_demos\Xamarin_demos.csproj">
-      <Project>{79431d7c-1734-4bc8-aa56-519e63de9a3c}</Project>
+      <Project>{5DA89433-A317-4FE3-A0AD-84D2B1F5216B}</Project>
       <Name>Xamarin_demos</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="Resources\Media.xcassets\bg.imageset\" />
+    <Folder Include="Resources\Media.xcassets\dry_clean.imageset\" />
+    <Folder Include="Resources\Media.xcassets\ic_add.imageset\" />
+    <Folder Include="Resources\Media.xcassets\ic_arrow_up.imageset\" />
+    <Folder Include="Resources\Media.xcassets\ic_user.imageset\" />
+    <Folder Include="Resources\Media.xcassets\shirt.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\Contents.json" />
+    <ImageAsset Include="Resources\Media.xcassets\bg.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Media.xcassets\dry_clean.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Media.xcassets\ic_add.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Media.xcassets\ic_arrow_up.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Media.xcassets\ic_user.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Media.xcassets\shirt.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Media.xcassets\dry_clean.imageset\dry_clean%402x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\dry_clean.imageset\dry_clean%403x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\ic_add.imageset\ic_add%402x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\ic_add.imageset\dry_clean%403x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\ic_arrow_up.imageset\ic_arrow_up%402x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\ic_arrow_up.imageset\ic_arrow_up%403x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\ic_user.imageset\ic_user%402x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\ic_user.imageset\ic_user%403x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\shirt.imageset\shirt%402x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\shirt.imageset\shirt%403x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\bg.imageset\bg%402x.png" />
+    <ImageAsset Include="Resources\Media.xcassets\bg.imageset\bg%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

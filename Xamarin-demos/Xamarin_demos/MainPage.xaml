@@ -1,11 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Xamarin_demos"
-             x:Class="Xamarin_demos.MainPage">
+             xmlns:local="clr-namespace:Xamarin_demos" 
+             x:Class="Xamarin_demos.MainPage" BackgroundImage="bg">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Image HorizontalOptions ="Start" Margin="20,30" Source="ic_user" Grid.Row="0" />
+        <StackLayout Margin="20,0,20,35" VerticalOptions="End" Grid.Row="1">
+            <Label Font="Roboto-Regular.ttf#Roboto" TextColor="White" Margin="20,0,20,0" FontSize="Small" HorizontalTextAlignment="Center" Text="Who says doing laundry has to be time consuming and boring?" />
+            <StackLayout x:Name="ListStack" Spacing="10"  Margin="0,25,0,0"/>
+        </StackLayout>    
+        <StackLayout Spacing="10" Padding="10,20,10,20" Orientation="Horizontal" Grid.Row="2" HorizontalOptions="Center">
+            <Label FontFamily="Roboto-Regular.ttf#Roboto" Text="ORDERS" VerticalTextAlignment="Center" TextColor="White" FontSize="Small"/>
+            <Image Source="ic_arrow_up" VerticalOptions="Center"/>
+        </StackLayout>    
+    </Grid>
 
 </ContentPage>
